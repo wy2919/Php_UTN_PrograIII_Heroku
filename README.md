@@ -86,7 +86,7 @@ Lo utlimo que deberiamos hacer es clic en el botón **Deploy Branch**. Esto solo
 
 Podemos verificar desde GitHub si el depliegue se hizo con exito. 
 
-https://github.com/flippiJS/slim-php-mysql-heroku/deployments
+https://github.com/caidevOficial/Php_UTN_PrograIII_Heroku/deployments
 
 ![Heroku6](https://i.ibb.co/M87vVmd/Screenshot-at-Mar-29-19-44-49.png)
 

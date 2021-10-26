@@ -22,9 +22,11 @@ $dotenv->safeLoad();
 
 // Instantiate App
 $app = AppFactory::create();
+$app->setBasePath('/app');
 
 // Add error middleware
 $app->addErrorMiddleware(true, true, true);
+
 
 
 // Routes
@@ -39,5 +41,9 @@ $app->get('[/]', function (Request $request, Response $response) {
     return $response;
 
 });
+
+$app->group('/login', function (RouteCollectorProxy $group) {
+    $group->post('[/]', \UsuarioController::class . ':CargaUno');
+  });
 
 $app->run();
